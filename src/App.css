@@ -1,0 +1,63 @@
+
+.searchBar{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+.searchBar input{
+  width: 250px;
+  padding: 5px;
+  font-size: 17px;
+  background-color: aliceblue;
+  border-radius: 3px;
+}
+.searchBar button{
+  width: 100px;
+  height: 32px;
+  background-color: red;
+  color: wheat;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading img{
+  width: 30px;
+  height: 30px;
+}
+.heading p{
+font-size: 26px;
+font-weight: 600;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:  wrap;
+  margin-top: 22px;
+}
+.card{
+  display: block;
+  width: 350px;
+  padding: 12px;
+  border-radius: 6px; 
+  background-color: rgb(243, 243, 184);
+  margin-top: 22px;
+}
+.card .img{
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.status{
+  font-size: 15px;
+  font-weight: 600;
+}
