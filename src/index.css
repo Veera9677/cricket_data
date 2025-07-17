@@ -1,3 +1,4 @@
+/* Base styles (mobile-first) */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -25,14 +26,19 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
   min-height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2em;
   line-height: 1.1;
+  margin: 1rem 0;
+  text-align: center;
 }
 
 button {
@@ -44,7 +50,10 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, background 0.25s;
+  margin: 0.5em 0;
+  width: 100%;
+  max-width: 320px;
 }
 button:hover {
   border-color: #646cff;
@@ -54,6 +63,31 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Responsive typography and layout for larger screens */
+@media (min-width: 600px) {
+  h1 {
+    font-size: 3.2em;
+  }
+  body {
+    padding: 2rem;
+  }
+  button {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+/* Desktop-specific styles */
+@media (min-width: 900px) {
+  body {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+}
+
+/* Light mode overrides */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
