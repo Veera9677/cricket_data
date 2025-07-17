@@ -172,3 +172,54 @@
   margin-top: 40px;
   color: #888;
 }
+.searchBar input {
+  /* ...existing code... */
+  color: #1a237e; /* Deep blue for input text */
+}
+
+.searchBar button {
+  /* ...existing code... */
+  color: #fff; /* White text for better contrast */
+  background-color: #1976d2; /* Rich blue */
+}
+.searchBar button:hover {
+  background-color: #0d47a1; /* Darker blue on hover */
+}
+
+.clear-btn {
+  background: #e3e3e3;
+  color: #374151; /* Rich dark gray */
+}
+.clear-btn:hover {
+  background: #bdbdbd;
+}
+
+.heading p {
+  color: #0d47a1; /* Deep blue for heading */
+}
+
+.card {
+  /* ...existing code... */
+  color: #212121; /* Rich dark gray for card text */
+  background-color: #fffde7; /* Soft yellow background */
+}
+
+h3, .team-name {
+  color: #1565c0; /* Accent blue for series/team names */
+}
+
+.match-type {
+  color: #6d4c41; /* Rich brown for match type */
+}
+
+.team-score {
+  color: #263238; /* Blue-gray for scores */
+}
+
+.status {
+  color: #d84315; /* Rich orange-red for status */
+}
+
+.no-matches {
+  color: #757575; /* Medium gray */
+}
